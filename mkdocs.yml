@@ -1,5 +1,6 @@
 site_name: Buddy Guide ESN VUT Brno
 #repo_url: https://github.com/esnvutbrno/buddy-guide
+site_url: https://esnvutbrno.github.io/buddy-guide/
 
 theme:
   name: material
@@ -35,11 +36,11 @@ theme:
 extra:
   alternate:
     - name: English
-      link: /en/
+      link: ./en/
       lang: en
 
     - name: Česky
-      link: /cs/
+      link: ./cs/
       lang: cs
 
 plugins:
@@ -49,28 +50,23 @@ plugins:
         en: "English"
         cs: "Česky"
 
-      docs_structure: folder
+      docs_structure: suffix
 
       default_language: 'en'
-      no_translation:
-        cs: "Tato stránka nemá český překlad."
-        en: "This page isn't translated to English."
+#      no_translation:
+#        cs: "Tato stránka nemá český překlad."
+#        en: "This page isn't translated to English."
 
-      translate_nav:
+      nav_translations:
         cs:
-          section title: "Secció"
-          subsection: "Subsecció"
-          page title: "Pàgina amb títol traduit"
-        en:
-          section title: "Section"
-          subsection: "Subsection"
-          page title: "Page with title translated"
+          'Home': Úvod
+          'Before Arrival': Před příjezdem
 
   - git-revision-date-localized:
       type: timeago
 
   - git-authors
 
-#nav:
-#  - Home: 'index.md'
-
+nav:
+  - 'Home': 'index.md'
+  - 'Before Arrival': before-arrival.md
