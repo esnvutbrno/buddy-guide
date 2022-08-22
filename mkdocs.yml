@@ -1,5 +1,5 @@
 site_name: Buddy Guide ESN VUT Brno
-repo_url: https://github.com/esnvutbrno/buddy-guide
+#repo_url: https://github.com/esnvutbrno/buddy-guide
 
 theme:
   name: material
