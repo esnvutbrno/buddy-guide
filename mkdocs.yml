@@ -1,4 +1,76 @@
 site_name: Buddy Guide ESN VUT Brno
+repo_url: https://github.com/esnvutbrno/buddy-guide
+
 theme:
   name: material
+  logo: assets/panda.svg
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+
+  custom_dir: theme
+
+
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+
+    - name: Česky
+      link: /cs/
+      lang: cs
+
+plugins:
+  - search
+  - i18n:
+      languages:
+        en: "English"
+        cs: "Česky"
+
+      docs_structure: folder
+
+      default_language: 'en'
+      no_translation:
+        cs: "Tato stránka nemá český překlad."
+        en: "This page isn't translated to English."
+
+      translate_nav:
+        cs:
+          section title: "Secció"
+          subsection: "Subsecció"
+          page title: "Pàgina amb títol traduit"
+        en:
+          section title: "Section"
+          subsection: "Subsection"
+          page title: "Page with title translated"
+
+  - git-revision-date-localized:
+      type: timeago
+
+  - git-authors
+
+#nav:
+#  - Home: 'index.md'
 
