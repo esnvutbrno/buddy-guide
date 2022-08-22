@@ -1,6 +1,7 @@
 site_name: Buddy Guide ESN VUT Brno
 #repo_url: https://github.com/esnvutbrno/buddy-guide
 site_url: https://esnvutbrno.github.io/buddy-guide/
+copyright: ESN VUT Brno © 2022
 
 theme:
   name: material
@@ -66,6 +67,9 @@ plugins:
       type: timeago
 
   - git-authors
+
+extra_css:
+  - assets/extra.css
 
 nav:
   - 'Home': 'index.md'
