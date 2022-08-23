@@ -9,3 +9,5 @@ Co dělat před příjezdem?
 ## Tohle spíš ne
 
 ### Ani náhodou!
+
+## Na tohle úplně zapomeň
