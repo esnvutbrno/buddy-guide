@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+         <loc>https://esnvutbrno.github.io/buddy-guide/</loc>
+         <lastmod>2022-08-23</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://esnvutbrno.github.io/buddy-guide/en/"/>
+         <xhtml:link rel="alternate" hreflang="cs" href="https://esnvutbrno.github.io/buddy-guide/cs/"/>
+         
+    </url>
+    <url>
+         <loc>https://esnvutbrno.github.io/buddy-guide/after-arrival/</loc>
+         <lastmod>2022-08-23</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://esnvutbrno.github.io/buddy-guide/en/after-arrival/"/>
+         <xhtml:link rel="alternate" hreflang="cs" href="https://esnvutbrno.github.io/buddy-guide/cs/after-arrival/"/>
+         
+    </url>
+    <url>
+         <loc>https://esnvutbrno.github.io/buddy-guide/before-arrival/</loc>
+         <lastmod>2022-08-23</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://esnvutbrno.github.io/buddy-guide/en/before-arrival/"/>
+         <xhtml:link rel="alternate" hreflang="cs" href="https://esnvutbrno.github.io/buddy-guide/cs/before-arrival/"/>
+         
+    </url>
+    <url>
+         <loc>https://esnvutbrno.github.io/buddy-guide/first-steps/</loc>
+         <lastmod>2022-08-23</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://esnvutbrno.github.io/buddy-guide/en/first-steps/"/>
+         <xhtml:link rel="alternate" hreflang="cs" href="https://esnvutbrno.github.io/buddy-guide/cs/first-steps/"/>
+         
+    </url>
+</urlset>
