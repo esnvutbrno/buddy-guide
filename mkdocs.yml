@@ -1,7 +1,9 @@
 site_name: Buddy Guide ESN VUT Brno
 #repo_url: https://github.com/esnvutbrno/buddy-guide
 site_url: https://esnvutbrno.github.io/buddy-guide/
-copyright: ESN VUT Brno © 2022
+copyright: >
+  ESN VUT Brno © 2022
+  <a href="#__consent" style="margin-left: 1rem">Change cookie settings</a>
 
 theme:
   name: material
@@ -9,11 +11,15 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
-    - navigation.tabs
-    - navigation.tracking
-    - navigation.sections
-    - navigation.expand
-    - toc.integrate
+    - navigation.tabs # navigation in top tabs
+    - navigation.tracking # change URL by scrolling
+    - navigation.sections # expands sections to top level
+    - navigation.expand # expandable navigation items in sidebar
+    - toc.integrate # integrated ToC in navigation
+    - search.suggest # autocomplete terms
+    - search.highlight # highlight occurrences after search
+    - search.share # share search results
+
   palette:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
@@ -44,6 +50,38 @@ extra:
       link: ./cs/
       lang: cs
 
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our buddy guide and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our buddy guide better.
+
+  analytics:
+    provider: google
+    property: G-EESXKGMDMT
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 2
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-neutral-outline
+          name: This page is average
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://github.com/esnvutbrno/buddy-guide/issues/new/?title=[Feedback]+{title}+-+{url}
+                               " target="_blank" rel="noopener">feedback form</a>.
+
 plugins:
   - search
   - i18n:
@@ -54,9 +92,9 @@ plugins:
       docs_structure: suffix
 
       default_language: 'en'
-#      no_translation:
-#        cs: "Tato stránka nemá český překlad."
-#        en: "This page isn't translated to English."
+      #      no_translation:
+      #        cs: "Tato stránka nemá český překlad."
+      #        en: "This page isn't translated to English."
 
       nav_translations:
         cs:
