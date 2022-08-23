@@ -36,8 +36,7 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
 
-
-  custom_dir: theme
+  custom_dir: overrides
 
 
 extra:
@@ -100,6 +99,7 @@ plugins:
         cs:
           'Home': Úvod
           'Before Arrival': Před příjezdem
+          'First Steps': První kroky
 
   - git-revision-date-localized:
       type: timeago
@@ -111,4 +111,5 @@ extra_css:
 
 nav:
   - 'Home': 'index.md'
+  - 'First Steps': 'first-steps.md'
   - 'Before Arrival': before-arrival.md

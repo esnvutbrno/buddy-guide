@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block announce %}
+<div style="text-align: center">
+    {% if config.theme.language == 'cs' %}
+    ️⚠️ Aktuální stav: nevydáno, probíhá dokončování ⚠️
+    {% elif config.theme.language == 'en' %}
+    ️⚠️ Current state: unreleased, work still in progress ⚠️
+    {% endif %}
+</div>
+{% endblock %}
