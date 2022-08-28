@@ -6,82 +6,95 @@
 
 <!-- Additional styles for landing page -->
 <style>
-
-  /* Application header should be static for the landing page */
-  .md-header {
-    position: initial;
-  }
-
-  /* Remove spacing, as we cannot hide it completely */
-  .md-main__inner {
-    margin: 0;
-  }
-
-  /* Hide main content for now */
-  .md-content {
-    display: none;
-  }
-
-  /* Hide table of contents */
-  @media screen and (min-width: 60em) {
-    .md-sidebar--secondary {
-      display: none;
+    /* Application header should be static for the landing page */
+    .md-header {
+        position: initial;
     }
-  }
 
-  /* Hide navigation */
-  @media screen and (min-width: 76.25em) {
-    .md-sidebar--primary {
-      display: none;
+    /*!* Remove spacing, as we cannot hide it completely *!*/
+    /*.md-main__inner {*/
+    /*    margin: 0;*/
+    /*}*/
+
+    /*!* Hide main content for now *!*/
+    /*.md-content {*/
+    /*    display: none;*/
+    /*}*/
+
+    /* Hide table of contents */
+    @media screen and (min-width: 60em) {
+        .md-sidebar--secondary {
+            display: none;
+        }
     }
-  }
 
-  .md-main:after,
-  .md-main:before {
-    display: none;
-  }
+    /* Hide navigation */
+    @media screen and (min-width: 76.25em) {
+        .md-sidebar--primary {
+            display: none;
+        }
+    }
+
+    .md-grid {
+        max-width: 45rem;
+    }
+
+    .md-main:after,
+    .md-main:before {
+        display: none;
+    }
+
+    .mdx-hero__image-group {
+        position: relative;
+        height: 50vw;
+        width: 100%;
+    }
+
+    .mdx-hero__image-group img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 </style>
 
-<!-- Hero for landing page -->
-<section class="mdx-container">
-  <div class="md-grid md-typeset">
-    <div class="mdx-hero">
-      <!-- Hero image -->
-      <div class="mdx-hero__image">
-        <img
-          src="assets/buddies.svg"
-          alt=""
-          width="1659"
-          height="1200"
-          draggable="false"
-          style="padding: 40px 20vw"
-        >
-      </div>
+<div class="mdx-hero__image-group">
+  <img src="assets/0-sky.svg" alt="" width="1066" height="533" style="filter: saturate(.5)">
+  <img src="assets/1-buildings.svg" alt="" width="1066" height="533" style="filter: saturate(.5)">
+  <img src="assets/2-people.svg" alt="" width="1000" height="500">
+</div>
 
-      <!-- Hero content -->
-      <div class="mdx-hero__content" style="text-align: center">
-        <h1>
-          {% if config.theme.language == 'cs' %}
-          Ten definitivní Buddy Guide
-          {% elif config.theme.language == 'en' %}
-          The definitive buddy guide
-          {% endif %}
-        </h1>
-<!--        <p>{{ config.site_description }}. Set up in 5 minutes.</p>-->
-        <a
-            href="{{ page.next_page.url | url }}"
-            title="{{ page.next_page.title | e }}"
-            class="md-button md-button--primary"
-        >
-          {% if config.theme.language == 'cs' %}
-          První kroky
-          {% elif config.theme.language == 'en' %}
-          The first steps
-          {% endif %}
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+<!--&lt;!&ndash; Hero for landing page &ndash;&gt;-->
+<!--<section class="mdx-container">-->
+<!--  <div class="md-grid md-typeset">-->
+<!--    <div class="mdx-hero">-->
+<!--      &lt;!&ndash; Hero content &ndash;&gt;-->
+<!--      <div class="mdx-hero__content" style="text-align: center">-->
+<!--        <h1>-->
+<!--          {% if config.theme.language == 'cs' %}-->
+<!--          Ten definitivní Buddy Guide-->
+<!--          {% elif config.theme.language == 'en' %}-->
+<!--          The definitive buddy guide-->
+<!--          {% endif %}-->
+<!--        </h1>-->
+<!--        &lt;!&ndash;        <p>{{ config.site_description }}. Set up in 5 minutes.</p>&ndash;&gt;-->
+<!--        <a-->
+<!--            href="{{ page.next_page.url | url }}"-->
+<!--            title="{{ page.next_page.title | e }}"-->
+<!--            class="md-button md-button&#45;&#45;primary"-->
+<!--        >-->
+<!--          {% if config.theme.language == 'cs' %}-->
+<!--          První kroky-->
+<!--          {% elif config.theme.language == 'en' %}-->
+<!--          The first steps-->
+<!--          {% endif %}-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 {% endblock %}
 
