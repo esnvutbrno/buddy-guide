@@ -17,6 +17,7 @@ A v neposlední řadě si užij zážitek ze setkání s různými kulturami. Pt
 
 
 Poznámky (doporučení) o tom být buddy:
+
 - uvědom si, že jsi za někoho zodpovědný a oni na tebe spoléhají
 - Erasmáci si často neuvědomují novou realitu a ty je tím musíš provést
 - postarej se, aby se cítili součástí naší ESN rodiny a pomož jim s problémy
