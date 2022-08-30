@@ -1,100 +1,58 @@
 {% extends "main.html" %}
 
-<!-- Render hero under tabs -->
-{% block tabs %}
-<!--{{ super() }}-->
+{% block hero %}
+<section class="mdx-parallax__group" data-md-color-scheme="slate">
+  {% for layer in [
+  { "depth": 8, "position": "70%", "image": "1-landscape" },
+  { "depth": 5, "position": "25%", "image": "2-plateau" },
+  { "depth": 4, "position": "20%", "image": "3-astronaut-1" },
+  { "depth": 3, "position": "30%", "image": "4-astronaut-2" },
+  { "depth": 2, "position": "40%", "image": "5-plants-1" },
+  { "depth": 1, "position": "50%", "image": "6-plants-2" },
+  ] %}
+  {% set image = "overrides/assets/images/layers/" ~ layer["image"] %}
+  {% set style = "style=\"" ~ [
+  "--md-parallax-depth: " ~ layer["depth"],
+  "--md-image-position: " ~ layer["position"]
+  ] | join(";") ~ "\"" %}
 
-<!-- Additional styles for landing page -->
-<style>
-    /* Application header should be static for the landing page */
-    .md-header {
-        position: initial;
-    }
-
-    /*!* Remove spacing, as we cannot hide it completely *!*/
-    /*.md-main__inner {*/
-    /*    margin: 0;*/
-    /*}*/
-
-    /*!* Hide main content for now *!*/
-    /*.md-content {*/
-    /*    display: none;*/
-    /*}*/
-
-    /* Hide table of contents */
-    @media screen and (min-width: 60em) {
-        .md-sidebar--secondary {
-            display: none;
-        }
-    }
-
-    /* Hide navigation */
-    @media screen and (min-width: 76.25em) {
-        .md-sidebar--primary {
-            display: none;
-        }
-    }
-
-    .md-grid {
-        max-width: 45rem;
-    }
-
-    .md-main:after,
-    .md-main:before {
-        display: none;
-    }
-
-    .mdx-hero__image-group {
-        position: relative;
-        height: 50vw;
-        width: 100%;
-    }
-
-    .mdx-hero__image-group img {
-        position: absolute;
-        width: 100%;
-        height: auto;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-</style>
-
-<div class="mdx-hero__image-group">
-  <img src="assets/0-sky.svg" alt="" width="1066" height="533" style="filter: saturate(.5)">
-  <img src="assets/1-buildings.svg" alt="" width="1066" height="533" style="filter: saturate(.5)">
-  <img src="assets/2-people.svg" alt="" width="1000" height="500">
-</div>
-
-<!--&lt;!&ndash; Hero for landing page &ndash;&gt;-->
-<!--<section class="mdx-container">-->
-<!--  <div class="md-grid md-typeset">-->
-<!--    <div class="mdx-hero">-->
-<!--      &lt;!&ndash; Hero content &ndash;&gt;-->
-<!--      <div class="mdx-hero__content" style="text-align: center">-->
-<!--        <h1>-->
-<!--          {% if config.theme.language == 'cs' %}-->
-<!--          Ten definitivní Buddy Guide-->
-<!--          {% elif config.theme.language == 'en' %}-->
-<!--          The definitive buddy guide-->
-<!--          {% endif %}-->
-<!--        </h1>-->
-<!--        &lt;!&ndash;        <p>{{ config.site_description }}. Set up in 5 minutes.</p>&ndash;&gt;-->
-<!--        <a-->
-<!--            href="{{ page.next_page.url | url }}"-->
-<!--            title="{{ page.next_page.title | e }}"-->
-<!--            class="md-button md-button&#45;&#45;primary"-->
-<!--        >-->
-<!--          {% if config.theme.language == 'cs' %}-->
-<!--          První kroky-->
-<!--          {% elif config.theme.language == 'en' %}-->
-<!--          The first steps-->
-<!--          {% endif %}-->
-<!--        </a>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
+  <picture class="mdx-parallax__layer" {{ style }}>
+    <img src="https://raw.githubusercontent.com/bsahane/me/master/material/{{ image ~ '.png' }}" alt=""
+         class="mdx-parallax__image">
+  </picture>
+  {% endfor %}
+  <div class="mdx-parallax__layer mdx-parallax__blend"></div>
+  <div class="mdx-hero" data-mdx-component="hero">
+    <div class="mdx-hero__scrollwrap md-grid">
+      {% include "partials/tabs.html" %}
+      <div class="mdx-hero__inner">
+        <div class="mdx-hero__teaser md-typeset">
+          <h1>Documentation that simply works</h1>
+          <p>{{ config.site_description }}.</p>
+          <a href="/zh/dce/what-is-dce/" class="md-button">
+            Get started
+          </a>
+          <a href="#everything-you-would-expect" class="md-button md-button--secondary">
+            Learn more
+          </a>
+          <a href="https://christinedonath.com" class="mdx-hero__attribution" tabindex="-1">
+            <strong>© Christine Donath</strong>
+          </a>
+        </div>
+        <div class="mdx-hero__more">
+<!--          {% include ".icons/material/arrow-down.svg" %}-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
 
+<!-- Navigation tabs (collapsing) -->
+{% block tabs %}{% endblock %}
+
+<!-- Content -->
+{% block content %}{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}{% endblock %}
