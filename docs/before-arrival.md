@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Before arrival
 
 What to do before arrival?
