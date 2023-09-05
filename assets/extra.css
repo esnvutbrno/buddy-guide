@@ -10,7 +10,7 @@
     top: 0;
     width: 15vw;
     /*background-color: var(--md-primary-fg-color);*/
-    background-image: url('back-right.svg');
+    /*background-image: url('back-right.svg');*/
     background-size: contain;
     background-repeat: repeat-y;
     background-position: right center;
@@ -24,7 +24,7 @@
     top: 0;
     width: 15vw;
     /*background-color: var(--md-primary-fg-color);*/
-    background-image: url('back-left.svg');
+    /*background-image: url('back-left.svg');*/
     background-size: contain;
     background-repeat: repeat-y;
     background-position: right center;
