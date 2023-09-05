@@ -86,8 +86,14 @@ plugins:
   - search
   - i18n:
       languages:
-        en: "English"
-        cs: "Česky"
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: cs
+          default: true
+          name: Česky
+          build: true
 
       docs_structure: suffix
 
