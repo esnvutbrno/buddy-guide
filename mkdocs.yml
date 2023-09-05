@@ -3,7 +3,7 @@ repo_url: ""
 #repo_url: https://github.com/esnvutbrno/buddy-guide
 site_url: https://esnvutbrno.github.io/buddy-guide/
 copyright: >
-  ESN VUT Brno © 2022
+  ESN VUT Brno © 2023
   <a href="#__consent" style="margin-left: 1rem">Change cookie settings</a>
 
 theme:
@@ -121,6 +121,8 @@ extra_css:
 
 markdown_extensions:
   - attr_list
+  - md_in_html
+
 
 nav:
   - 'Home': 'index.md'
